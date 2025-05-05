@@ -1,0 +1,23 @@
+:root {
+  --bg-dark: #0a0a0a;
+  --gold: #d4af37;
+  --gold-light: rgba(212, 175, 55, 0.7);
+}
+
+body {
+  background: var(--bg-dark) url('bg-paw.png');
+  color: #f0f0f0;
+  font-family: 'Playfair Display', serif;
+}
+
+/* 产品卡片悬停特效 */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px var(--gold-light);
+}
+
+/* 定制表单样式 */
+.customize-form {
+  border: 1px dashed var(--gold);
+  padding: 2rem;
+}

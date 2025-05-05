@@ -1,0 +1,25 @@
+<div class="customize-form">
+  <h3 class="text-xl mb-4">为TA定制专属纪念</h3>
+  
+  <!-- 刻字内容 -->
+  <div class="mb-6">
+    <label>刻字内容 (最多20字)</label>
+    <input type="text" maxlength="20" 
+           placeholder="例如：永远爱你的Max
+           class="w-full bg-transparent border-b border-{{ settings.color_gold }}">
+  </div>
+  
+  <!-- 爪印上传 -->
+  <div class="mb-6">
+    <label>上传爪印照片</label>
+    <input type="file" id="paw-upload" accept="image/*">
+    <img id="paw-preview" class="mt-2 max-h-20 hidden">
+  </div>
+  
+  <!-- 纪念日 -->
+  <div class="mb-6">
+    <label>TA的生日/纪念日</label>
+    <input type="date" id="pet-birthday">
+    <p id="memorial-days" class="text-sm mt-1 text-{{ settings.color_gold }}"></p>
+  </div>
+</div

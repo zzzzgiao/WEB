@@ -1,0 +1,18 @@
+{% section 'hero' %}
+
+<div class="container mx-auto py-12">
+  <h2 class="text-3xl border-b border-{{ settings.color_gold }} pb-2">定制故事</h2>
+  
+  <!-- 动态产品展示 -->
+  {% for product in collections.frontpage.products %}
+    <div class="product-card my-8 p-6 transition-all">
+      <img src="{{ product.featured_image | img_url: '600x' }}" 
+           alt="{{ product.title }}"
+           class="w-full h-64 object-cover">
+      <h3 class="text-2xl mt-4">{{ product.title }}</h3>
+      <button class="bg-{{ settings.color_gold }} mt-4 px-6 py-2">
+        开始定制
+      </button>
+    </div>
+  {% endfor %}
+</div>
